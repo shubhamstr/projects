@@ -34,59 +34,58 @@ header .list a li:hover{
     border-radius: 10px;
 }
 section{
-    margin-top:150px;
-    padding:25px;
-    padding-left:200px;
+    margin: 0 auto;
+    max-width:70%;
+    margin-top:150px; 
+    display:flex;
+    justify-content: space-around;
 }
-section h1{
+section div h1{
     font-weight:700;
     font-size:50px;
     padding:10px;
 }
-section p{
+section div p{
     font-size: 25px;
     font-weight:700;
     padding:10px;
 }
-section p a:hover{
+section div p a:hover{
     border-bottom:2px solid lightskyblue;
 }
-section img{
-    position:absolute;
-    top:140px;
+section div img{
     width:200px;
     height:250px;
-    right:320px;
     border-top-right-radius: 20%;
     border-bottom-left-radius: 20%;
 }
-section .social a{
+section div .social a{  
     padding:5px;
 }
-section .social a i{
+section div .social a i{
     font-size: 30px;
     color:white;
     padding:30px;
 }
-section .social a i:hover{
+section div .social a i:hover{
     background:rgb(104, 103, 97);
 }
-section .social a .fa-twitter{
+section div.social a .fa-twitter{
     background: rgb(150, 148, 228);
     border-radius:50%;
     padding:10px;
 }
-section .social a .fa-github{
+section div .social a .fa-github{
     background: rgb(104, 102, 238);
     border-radius:50%;
     padding:10px;
 }
-section .social a .fa-codepen{
+section div .social a .fa-codepen{
     background: rgb(32, 53, 47);
     border-radius:50%;
     padding:10px;
 }
-section .social a .fa-linkedin-in{
+section div .social a .fa-linkedin-in{
     background: rgb(80, 77, 241);
     border-radius:50%;
     padding:10px;
@@ -97,11 +96,54 @@ section .button{
     padding:8px;
     border-radius:5px;
     margin-top:20px;
-}
-section .button a{
     color:white;
+    margin-left: 10px;;
 }
-section .button:hover{
+section div .button:hover{
     background:rgb(104, 103, 97);
-    color:white
+}
+
+
+/*responsive design css*/
+
+@media only screen and (max-width:900px){
+    section div h1{
+        font-size:40px;
+    }
+}
+@media only screen and (max-width:750px){
+    header{
+        position: relative; 
+    }
+    section {
+        display: block;
+        margin-top:50px;
+    }
+    section div h1{
+        font-size:30px;
+    }
+    section div p{
+        font-size:18px;
+    }
+    section div img{
+        padding-top:30px;
+        width:100%;
+        height:400px;
+
+    }
+
+}
+@media only screen and (max-width:400px){
+    header .list a li{
+        font-size: 16px;;
+    }
+    section div .social a i{
+        font-size:18px;
+    }
+    section{
+        margin-top:20px; 
+    }   
+    section div h1{
+        font-size:25px;
+    }
 }
