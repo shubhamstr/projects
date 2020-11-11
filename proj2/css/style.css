@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1000px;
+    margin:0 auto;
+}
+.header{
+    width:100%;
+}
+.first_nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height:10vh;
+    background: rgb(97, 60, 60);
+}
+.first_list{
+    display:flex;
+    list-style: none;
+    font-size: .8rem;
+}
+.first_list_item a{
+    padding:10px;
+    color:#fff;
+    cursor:pointer;
+}
+.first_list_item a:hover{
+    background:red;
+}
+.main_nav{
+    display:flex;
+    width:100%;
+}
+.main_list{
+    display:flex;
+    list-style: none;
+    font-size:1rem;
+}
+.main_list_item a{
+     padding:10px;
+     line-height: 50px;
+     cursor:pointer;
+     border-bottom: 5px solid rgb(120, 245, 234);
+}
+.main_list_item a.active{
+    border-bottom: 5px solid magenta;
+}
+.main_list_item a:hover{
+    background:red;
+}
+.section-1{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:30vh;
+}
+.logo{
+    padding: 20px;
+}
+.logo h1{
+    font-size:2rem;
+}
+.search{
+    padding:20px;
+}
+.search input[type="text"]{
+    padding:5px;
+    border-radius:5px;
+    outline: none;
+    background:rgb(120, 245, 234);
+    border:none;
+}
+.search a{
+    padding:5px;
+    text-decoration: none;
+    background:blueviolet;
+    border-radius: 5px;
+    color:#fff;
+}
+.section-2{
+    background:rgb(120, 245, 234);
+    border-radius: 5px;
+    height:80vh;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+.main-text{
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+.main-text p{
+    padding:20px 0 20px 0;
+}
+.main-text a{
+    align-self: flex-start;
+    padding:5px;
+    text-decoration: none;
+    background:blueviolet;
+    border-radius: 5px;
+    color:#fff;
+}
+.slidebar{
+    background:rgb(52, 71, 71);
+    margin:20px;
+    width:60%;
+    border-radius: 5px;
+    position:relative;
+}
+.slidebar .inputs{
+    position:absolute;
+    bottom:5%;
+    left:5%;
+}
+.section-3{
+    margin:10px;
+    border-radius: 5px;
+    height:80vh;
+    display:flex;
+    justify-content: space-between;
+}
+.section-3 .small_sections{
+    width:50%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.small_sections div{
+    width:50%;
+    text-align: center;
+}
+.small_sections div h1{
+    padding:10px;
+}
+.small_sections div img{
+    width:80px;
+    height:80px;
+}
+.section-4{
+    width:100%;
+    background:rgb(120, 245, 234);
+    height:20vh;
+    margin:10px;
+    border-left:8px solid blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+}
+.section-4 a{
+    padding:5px;
+    text-decoration: none;
+    background:blueviolet;
+    border-radius: 5px;
+    color:#fff;
+}
+.footer{
+    width:100%;
+    height:70vh;
+    background:rgb(97, 60, 60);
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    margin-top:20px;
+}
+.footer h5{
+    padding:20px 0;
+}
+.footer p{
+    padding:10px 0;
+}
+.footer .about{
+    width:25%;
+    padding:20px;
+}
+.footer .about img{
+    width:100%;
+    height:90px;
+}
+.footer .about a{
+    padding:5px;
+    text-decoration: none;
+    border-radius: 5px;
+    color:rgb(182, 122, 238);
+}
+.footer .links{
+    width:25%;
+    padding:20px;
+    cursor: pointer;
+}
+.footer .links ul{
+    padding:0 0 0 20px;
+    color:rgb(182, 122, 238);
+
+}
+.footer .links ul li{
+    padding:5px;
+}
+.footer .posts{
+    width:25%;
+    padding:20px;
+    line-height: 12px;
+}
+.post{
+    margin-bottom: 20px;
+}
+.posts small{
+    font-size:.6rem;
+}
+.posts p{
+    font-size:.7rem;
+}
+.posts a{
+    padding:5px;
+    text-decoration: none;
+    border-radius: 5px;
+    color:rgb(182, 122, 238);
+}
+.footer .contact{
+    width:25%;
+    padding:20px;
+}
+.footer input{
+    padding:5px;
+    border-radius: 5px;
+    background:rgb(116, 78, 78);
+    border:none;
+    margin:5px;
+}
+.footer textarea{
+    padding:5px;
+    border-radius: 5px;
+    background:rgb(116, 78, 78);
+    margin:5px;
+    resize:vertical;
+    border:none;
+}
+.footer input[type="submit"]{
+    padding:5px;
+    text-decoration: none;
+    background:blueviolet;
+    border-radius: 5px;
+    color:#fff;
+    cursor:pointer;
+}
+.end{
+    width:100%;
+    background:rgb(82, 52, 52);
+    line-height: 10vh;
+    text-align: center;
+    color:#fff;
+}
