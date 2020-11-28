@@ -6,3 +6,4 @@ bar.addEventListener('click',function(){
 bar.addEventListener('click',function(){
      menu.classList.toggle("showh");
 });
+
